@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
   <link rel="stylesheet" href="./style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Elixir Learners</title>
 </head>
 
 <body class="h-screen flex flex-col justify-center">
   <!--Nav-->
   <div class="shrink-0 bg-[#674a76] w-screen h-16 flex flex-row justify-center lg:justify-end items-center">
     <nav
-      class="shirnk-0 bg-[#674a76] flex flex-row items-center font-semibold text-white space-x-8 lg:space-x-16 lg:mr-56">
+      class="shrink-0 bg-[#674a76] flex flex-row items-center font-semibold text-white space-x-8 lg:space-x-16 lg:mr-56">
       <a href="https://docs.elixirlearners.dev/projects.html" class="hover:text-purple-400 cursor-pointer">
         Project
       </a>
@@ -26,30 +26,35 @@
     </nav>
   </div>
 
+
   <!--Content-->
   <div
     class="lg:space-y-8 space-y-0 grow flex flex-col justify-center items-center bg-[url('./assets/low-poly-grid.svg')]">
     <!--Upper Content-->
-    <div class=" flex flex-row justify-center space-x-20 mt-14">
+    <div class="flex flex-row justify-center space-x-20 mt-14">
       <div class="relative bottom-12">
-        <h1 class="mb-3 text-purple-600 uppercase text-3xl font-bold">Elixir Learners<br>Community</h1>
-        <p class="mb-12 text-purple-950 font-bold">Collaborate on Discord and Github with like<br> minded
+        <h1 class="z-20 mb-3 text-purple-600 uppercase text-3xl font-bold">Elixir Learners<br>Community</h1>
+        <p class="z-20 mb-12 text-purple-950 font-bold">Collaborate on Discord and Github with like<br> minded
           Elixir
           enthusiasts!
         </p>
         <div class="flex flex-row space-x-5 items-center">
+          <!--Elixir Logo Background-->
+          <div class="absolute z-10 overflow-hidden w-[46rem] right-5 -top-9">
+            <image class="hidden lg:block w-full -rotate-[23deg] " src="./assets/elixir-logo.svg" />
+          </div>
           <a href="https://discord.gg/dJ25GHFZnS"
-            class="hover:shadow-lg hover:bg-indigo-700 transition ease-in duration-100 cursor-pointer text-white font-bold bg-indigo-500 shadow-lg rounded-lg w-40 h-11 flex  justify-center items-center">Discord</a>
-          <div class="font-bold text-purple-950">12 members learning!</div>
+            class="z-20 hover:shadow-lg hover:bg-indigo-700 transition ease-in duration-100 cursor-pointer text-white font-bold bg-indigo-500 shadow-lg rounded-lg w-40 h-11 flex  justify-center items-center">Discord</a>
+          <div class="z-20 font-bold text-purple-950">12 members learning!</div>
         </div>
       </div>
       <!--Repo-->
-      <div class="w-[29rem] hidden lg:block">
+      <div class="w-[29rem] hidden lg:block z-20">
         <image class="rounded-lg img-shadow" src="./assets/repo.jpg" />
       </div>
     </div>
     <!--Lower Images-->
-    <div class="lg:w-[29rem] w-96 p-4">
+    <div class="lg:w-[29rem] w-96 p-4 z-20">
       <image class="rounded-lg img-shadow" src="./assets/code.png" />
     </div>
     <!--<div class="">
