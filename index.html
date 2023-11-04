@@ -11,44 +11,56 @@
 
 <body class="h-screen flex flex-col justify-center">
   <!--Nav-->
-  <div class="shrink-0 bg-[#674a76] w-screen h-16 flex justify-end items-center">
-    <nav class=" flex flex-row font-semibold text-white space-x-16 mr-56">
-      <a class="cursor-pointer">
+  <div class="shrink-0 bg-[#674a76] w-screen h-16 flex flex-row justify-center lg:justify-end items-center">
+    <nav
+      class="shirnk-0 bg-[#674a76] flex flex-row items-center font-semibold text-white space-x-8 lg:space-x-16 lg:mr-56">
+      <a href="https://docs.elixirlearners.dev/projects.html" class="hover:text-purple-400 cursor-pointer">
         Project
       </a>
-      <a class="cursor-pointer">
+      <a href="https://docs.elixirlearners.dev/discord.html" class="hover:text-purple-400 cursor-pointer">
         Documentation
       </a>
-      <a class="cursor-pointer">
+      <a href="/" class="cursor-pointer hover:text-purple-400">
         Staff
       </a>
     </nav>
   </div>
 
   <!--Content-->
-  <div class="space-y-8 grow flex flex-col justify-center items-center bg-[url('./assets/bg.png')]">
+  <div
+    class="lg:space-y-8 space-y-0 grow flex flex-col justify-center items-center bg-[url('./assets/low-poly-grid.svg')]">
     <!--Upper Content-->
     <div class=" flex flex-row justify-center space-x-20 mt-14">
       <div class="relative bottom-12">
-        <h1 class="mb-3 text-white uppercase text-3xl font-bold">Elixir Learners<br>Community</h1>
-        <p class="mb-12 text-slate-200 font-medium">Collaborate on Discord and Github with like<br> minded
+        <h1 class="mb-3 text-purple-600 uppercase text-3xl font-bold">Elixir Learners<br>Community</h1>
+        <p class="mb-12 text-purple-950 font-bold">Collaborate on Discord and Github with like<br> minded
           Elixir
           enthusiasts!
         </p>
         <div class="flex flex-row space-x-5 items-center">
-          <button class="text-white font-bold bg-indigo-500 shadow-lg rounded-lg w-40 h-11">Discord</button>
-          <div class="font-bold text-white">12 members learning!</div>
+          <a href="https://discord.gg/dJ25GHFZnS"
+            class="hover:shadow-lg hover:bg-indigo-700 transition ease-in duration-100 cursor-pointer text-white font-bold bg-indigo-500 shadow-lg rounded-lg w-40 h-11 flex  justify-center items-center">Discord</a>
+          <div class="font-bold text-purple-950">12 members learning!</div>
         </div>
       </div>
-      <div class="">
-        <image src="./assets/repo.png" />
+      <!--Repo-->
+      <div class="w-[29rem] hidden lg:block">
+        <image class="rounded-lg img-shadow" src="./assets/repo.jpg" />
       </div>
     </div>
-    <div class="">
+    <!--Lower Images-->
+    <div class="lg:w-[29rem] w-96 p-4">
+      <image class="rounded-lg img-shadow" src="./assets/code.png" />
+    </div>
+    <!--<div class="">
       <image src="./assets/code.png" />
     </div>
+    -->
   </div>
 
+  <div class="hidden lg:block absolute bottom-0 w-full overflow-hidden ">
+    <image class="w-full translate-y-48" src="./assets/layers-waves-cropped.svg" />
+  </div>
 
   <script type="module" src="/main.js"></script>
 </body>
